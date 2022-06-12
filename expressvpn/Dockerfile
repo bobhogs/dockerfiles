@@ -20,7 +20,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /tmp/*.deb \
     && apt-get purge -y --auto-remove wget
 
-COPY entrypoint.sh /test/dockerfiles-master/entrypoint.sh
-COPY expressvpnActivate.sh /test/dockerfiles-master/expressvpn/expressvpnActivate.sh
+COPY entrypoint.sh /tmp/entrypoint.sh
+COPY expressvpnActivate.sh /tmp/expressvpnActivate.sh
 
-ENTRYPOINT ["/bin/bash", "/test/dockerfiles-master/expressvpn/expressvpnentrypoint.sh"]
+ENTRYPOINT ["/bin/bash", "/tmp/expressvpnentrypoint.sh"]
