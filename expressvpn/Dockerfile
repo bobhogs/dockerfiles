@@ -3,9 +3,9 @@
 
 FROM debian:bullseye-slim
 
-LABEL maintainer="benjamin@polkaned.net"
+LABEL maintainer="brocole@me.com"
 
-ENV ACTIVATION_CODE Code
+ENV ACTIVATION_CODE code
 ENV LOCATION smart
 ENV PREFERRED_PROTOCOL auto
 ENV LIGHTWAY_CIPHER auto
